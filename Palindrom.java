@@ -2,9 +2,7 @@ import java.util.Scanner;
 public class Palindrom {
 
     static boolean isPalindrome(int number){
-        Scanner input=new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        number= input.nextInt();
+        
         int lastNumber,temp,reverseNumber=0;
         temp=number;
         while (temp!=0){
@@ -19,6 +17,9 @@ public class Palindrom {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome(121));
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int newNumber= input.nextInt();
+        isPalindrome(newNumber);
     }
 }
